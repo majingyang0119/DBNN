@@ -1,0 +1,160 @@
+CaDynamics_E2.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/CaDynamics_E2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CaDynamics_E2.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./CaDynamics_E2.o: CaDynamics_E2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+Ca_HVA.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/Ca_HVA.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_HVA.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./Ca_HVA.o: Ca_HVA.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+Ca_LVAst.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/Ca_LVAst.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ca_LVAst.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./Ca_LVAst.o: Ca_LVAst.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+epsp.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/epsp.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "epsp.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./epsp.o: epsp.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+Ih.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/Ih.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./Ih.o: Ih.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+Im.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/Im.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Im.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./Im.o: Im.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+K_Pst.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/K_Pst.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Pst.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./K_Pst.o: K_Pst.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+K_Tst.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/K_Tst.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "K_Tst.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./K_Tst.o: K_Tst.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+kv.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/kv.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kv.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./kv.o: kv.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+na.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/na.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "na.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./na.o: na.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+Nap_Et2.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/Nap_Et2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nap_Et2.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./Nap_Et2.o: Nap_Et2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+NaTa_t.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/NaTa_t.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTa_t.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./NaTa_t.o: NaTa_t.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+NaTs2_t.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/NaTs2_t.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "NaTs2_t.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./NaTs2_t.o: NaTs2_t.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+ProbAMPA.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/ProbAMPA.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPA.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./ProbAMPA.o: ProbAMPA.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+ProbAMPANMDA2.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/ProbAMPANMDA2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA2.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./ProbAMPANMDA2.o: ProbAMPANMDA2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+ProbAMPANMDA2_ratio.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/ProbAMPANMDA2_ratio.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA2_ratio.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./ProbAMPANMDA2_ratio.o: ProbAMPANMDA2_ratio.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+ProbAMPANMDA_EMS.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/ProbAMPANMDA_EMS.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbAMPANMDA_EMS.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./ProbAMPANMDA_EMS.o: ProbAMPANMDA_EMS.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+ProbGABAAB_EMS.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/ProbGABAAB_EMS.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ProbGABAAB_EMS.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./ProbGABAAB_EMS.o: ProbGABAAB_EMS.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+SK_E2.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/SK_E2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SK_E2.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./SK_E2.o: SK_E2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+
+SKv3_1.cpp: /home/mjy/project/bilinear_network/2021Neuron/L5PC/mods/SKv3_1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SKv3_1.mod"  -o "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64" )
+
+./SKv3_1.o: SKv3_1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"/home/mjy/project/bilinear_network/2021Neuron/L5PC/mods" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/2021Neuron/L5PC/x86_64/$<" -o $@
+

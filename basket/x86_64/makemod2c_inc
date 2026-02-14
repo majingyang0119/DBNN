@@ -1,0 +1,152 @@
+Cav1_2.cpp: ../mod_files//Cav1_2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Cav1_2.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Cav1_2.o: Cav1_2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Cav1_3.cpp: ../mod_files//Cav1_3.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Cav1_3.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Cav1_3.o: Cav1_3.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Cav2_1.cpp: ../mod_files//Cav2_1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Cav2_1.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Cav2_1.o: Cav2_1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Cav3_2.cpp: ../mod_files//Cav3_2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Cav3_2.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Cav3_2.o: Cav3_2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+cdp5StCmod.cpp: ../mod_files//cdp5StCmod.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "cdp5StCmod.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./cdp5StCmod.o: cdp5StCmod.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+GOLGI_Ampa_pf_aa_det_vi.cpp: ../mod_files//GOLGI_Ampa_pf_aa_det_vi.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "GOLGI_Ampa_pf_aa_det_vi.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./GOLGI_Ampa_pf_aa_det_vi.o: GOLGI_Ampa_pf_aa_det_vi.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+HCN1_PC.cpp: ../mod_files//HCN1_PC.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "HCN1_PC.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./HCN1_PC.o: HCN1_PC.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kca1_1.cpp: ../mod_files//Kca1_1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kca1_1.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kca1_1.o: Kca1_1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kca2_2.cpp: ../mod_files//Kca2_2.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kca2_2.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kca2_2.o: Kca2_2.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kca3_1.cpp: ../mod_files//Kca3_1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kca3_1.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kca3_1.o: Kca3_1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kir2_3.cpp: ../mod_files//Kir2_3.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kir2_3.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kir2_3.o: Kir2_3.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kv1_1.cpp: ../mod_files//Kv1_1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kv1_1.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kv1_1.o: Kv1_1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kv3_4.cpp: ../mod_files//Kv3_4.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kv3_4.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kv3_4.o: Kv3_4.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Kv4_3.cpp: ../mod_files//Kv4_3.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Kv4_3.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Kv4_3.o: Kv4_3.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Leak.cpp: ../mod_files//Leak.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Leak.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Leak.o: Leak.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Nav1_1.cpp: ../mod_files//Nav1_1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nav1_1.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Nav1_1.o: Nav1_1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+Nav1_6.cpp: ../mod_files//Nav1_6.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Nav1_6.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./Nav1_6.o: Nav1_6.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+PC_Gaba_det_vi_alfa1.cpp: ../mod_files//PC_Gaba_det_vi_alfa1.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "PC_Gaba_det_vi_alfa1.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./PC_Gaba_det_vi_alfa1.o: PC_Gaba_det_vi_alfa1.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+
+SC_NMDA_NR2B.cpp: ../mod_files//SC_NMDA_NR2B.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mod_files";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SC_NMDA_NR2B.mod"  -o "/home/mjy/project/bilinear_network/basket/x86_64" )
+
+./SC_NMDA_NR2B.o: SC_NMDA_NR2B.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /home/mjy/project/bilinear_network/basket/x86_64/$<\\n"
+	$(CXXCOMPILE) -I"../mod_files" $(INCLUDES) -fPIC -c "/home/mjy/project/bilinear_network/basket/x86_64/$<" -o $@
+

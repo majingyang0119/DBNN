@@ -1,0 +1,16 @@
+./capump.c: ../capump.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "capump.mod" -o "/home/mjy/project/bilinear_network/ganglion/x86_64")
+
+./capump.o: ./capump.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
+./spike.c: ../spike.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "spike.mod" -o "/home/mjy/project/bilinear_network/ganglion/x86_64")
+
+./spike.o: ./spike.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I".." $(INCLUDES) -fPIC -c $< -o $@
+
