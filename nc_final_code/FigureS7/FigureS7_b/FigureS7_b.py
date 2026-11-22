@@ -13,9 +13,6 @@ ROOT = SCRIPT_DIR.parents[2]
 DATA_DIR = ROOT / "nc_final_data" / "FigureS7" / "FigureS7_b"
 SOURCE_DIR = ROOT / "nc_final_source_data" / "FigureS7" / "FigureS7_b"
 
-
-
-
 def write_table(path, columns, runs, means, stds):
     values = np.asarray(runs)
     if values.ndim != 2 or values.shape[0] != len(columns) or len(means) != len(columns) or len(stds) != len(columns):
@@ -36,29 +33,14 @@ def write_table(path, columns, runs, means, stds):
             temporary.unlink()
 
 
-def write_runtime_table(path, x, shown, raw, neuron, dbnn, include_raw):
+def write_runtime_table(path, x, shown, plotted_means, plotted_stds):
     columns, runs, means, stds = [], [], [], []
     for condition_index, condition in enumerate(x):
         for engine_index, engine in enumerate(("NEURON", "DBNN")):
-            prefix = f"{condition:g}_{engine}"
-            if include_raw:
-                columns.append(prefix + "_raw_s")
-                series = raw[condition_index, engine_index]
-                runs.append(series)
-                means.append(series.mean())
-                stds.append(series.std(ddof=1))
-            columns.append(prefix + ("_plotted_s" if include_raw else "_runtime_s"))
-            series = shown[condition_index, engine_index]
-            runs.append(series)
-            means.append(series.mean())
-            stds.append(series.std(ddof=1))
-            config = neuron[condition_index] if engine_index == 0 else dbnn[condition_index]
-            fields = ("dt_ms", "variant", "weight_factor") if engine_index == 0 else ("dt_ms", "method", "execution")
-            for field in fields:
-                columns.append(prefix + "_" + field)
-                runs.append(config[field])
-                means.append("")
-                stds.append("")
+            columns.append(f"{condition:g}_{engine}_plotted_s")
+            runs.append(shown[condition_index, engine_index])
+            means.append(plotted_means[condition_index, engine_index])
+            stds.append(plotted_stds[condition_index, engine_index])
     write_table(path, columns, runs, means, stds)
 
 
@@ -68,15 +50,12 @@ def main():
     if x.shape != (8,) or means.shape != (8, 2) or not np.isfinite(means).all() or np.any(means <= 0):
         raise ValueError("Unexpected figure data")
     runs = np.load(DATA_DIR / "runtime_runs_s.npy", allow_pickle=False)
-    raw = np.load(DATA_DIR / "runtime_raw_s.npy", allow_pickle=False)
-    neuron = np.load(DATA_DIR / "neuron_config.npy", allow_pickle=False)
-    dbnn = np.load(DATA_DIR / "dbnn_config.npy", allow_pickle=False)
-    if runs.shape != (8, 2, 5) or raw.shape != runs.shape or neuron.shape != (8, 5) or dbnn.shape != (8, 5):
+    if runs.shape != (8, 2, 5) or not np.isfinite(runs).all() or np.any(runs <= 0):
         raise ValueError("Unexpected individual timing data")
     if not np.allclose(runs.mean(axis=2), means, rtol=1e-12, atol=1e-12):
         raise ValueError("Individual times do not match plotted means")
     stds = runs.std(axis=2, ddof=1)
-    write_runtime_table(SOURCE_DIR / "FigureS7_b.csv", x, runs, raw, neuron, dbnn, True)
+    write_runtime_table(SOURCE_DIR / "FigureS7_b.csv", x, runs, means, stds)
     plt.rcParams.update({"font.family": "Arial", "font.size": 19, "axes.labelsize": 21, "xtick.labelsize": 17, "ytick.labelsize": 17, "legend.fontsize": 18, "axes.linewidth": 1.3, "pdf.fonttype": 42, "ps.fonttype": 42})
     fig, ax = plt.subplots(figsize=(7.4, 5.7))
     ax.plot(x, means[:, 0], color="#202020", marker="o", linewidth=2.8, markersize=8.5, markeredgewidth=1.0, label="NEURON", clip_on=False)
